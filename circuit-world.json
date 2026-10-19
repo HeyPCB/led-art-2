@@ -146,6 +146,13 @@
       "summary": "A three-lobed pumpkin for a Halloween horror double bill. The first carving always goes wrong."
     },
     {
+      "slug": "jingle-bell",
+      "path": "boards/jingle-bell",
+      "title": "HeyPCB Jingle",
+      "role": "Jingle LED art, green mask",
+      "summary": "A bell from the holiday classic where a man finds out what the world would be like without him."
+    },
+    {
       "slug": "jumbo-cloud",
       "path": "boards/jumbo-cloud",
       "title": "HeyPCB Sky High",
@@ -312,6 +319,13 @@
       "title": "HeyPCB Sunset",
       "role": "Sunset LED art, red mask",
       "summary": "A twelve-ray sun in red, for the hero riding off into the sunset in the last shot."
+    },
+    {
+      "slug": "thunder-bolt",
+      "path": "boards/thunder-bolt",
+      "title": "HeyPCB Thunder",
+      "role": "Thunder LED art, yellow mask",
+      "summary": "A yellow lightning bolt whose LEDs strike from top to bottom: the scar, the storm and the superhero logo, as one desk badge."
     },
     {
       "slug": "tiny-moon",
