@@ -1,0 +1,773 @@
+{
+  "name": "art_paladin",
+  "title": "HeyPCB PALADIN - Paladin Shield LED art board",
+  "revision": "A",
+  "brief": "Paladin Shield LED art board: a shield-shaped white-mask board with 21 addressable RGB LEDs on its outline, a CH32V003 controller at 5 V, a mode button and USB-C power; 70.01 x 91.01 mm, 4 layers.",
+  "blocks": [
+    {
+      "block": "usb_c_data_5v",
+      "as": "usb",
+      "title": "USB-C 5 V in",
+      "nets": {
+        "VBUS": "5V"
+      }
+    },
+    {
+      "block": "ch32_led_core",
+      "as": "core",
+      "title": "CH32V003 LED controller",
+      "nets": {
+        "5V": "5V",
+        "LED_DATA": "D1"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px1",
+      "title": "LED 1",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D1",
+        "DOUT": "D2"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px2",
+      "title": "LED 2",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D2",
+        "DOUT": "D3"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px3",
+      "title": "LED 3",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D3",
+        "DOUT": "D4"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px4",
+      "title": "LED 4",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D4",
+        "DOUT": "D5"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px5",
+      "title": "LED 5",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D5",
+        "DOUT": "D6"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px6",
+      "title": "LED 6",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D6",
+        "DOUT": "D7"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px7",
+      "title": "LED 7",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D7",
+        "DOUT": "D8"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px8",
+      "title": "LED 8",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D8",
+        "DOUT": "D9"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px9",
+      "title": "LED 9",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D9",
+        "DOUT": "D10"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px10",
+      "title": "LED 10",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D10",
+        "DOUT": "D11"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px11",
+      "title": "LED 11",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D11",
+        "DOUT": "D12"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px12",
+      "title": "LED 12",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D12",
+        "DOUT": "D13"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px13",
+      "title": "LED 13",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D13",
+        "DOUT": "D14"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px14",
+      "title": "LED 14",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D14",
+        "DOUT": "D15"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px15",
+      "title": "LED 15",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D15",
+        "DOUT": "D16"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px16",
+      "title": "LED 16",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D16",
+        "DOUT": "D17"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px17",
+      "title": "LED 17",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D17",
+        "DOUT": "D18"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px18",
+      "title": "LED 18",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D18",
+        "DOUT": "D19"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px19",
+      "title": "LED 19",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D19",
+        "DOUT": "D20"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px20",
+      "title": "LED 20",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D20",
+        "DOUT": "D21"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px21",
+      "title": "LED 21",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D21",
+        "DOUT": "D22"
+      }
+    },
+    {
+      "block": "led_chain_out",
+      "as": "out",
+      "title": "LED chain out",
+      "nets": {
+        "5V": "5V",
+        "DOUT": "D22"
+      }
+    }
+  ],
+  "pwrFlags": [
+    "GND",
+    "5V"
+  ],
+  "netClasses": [
+    {
+      "name": "PWR",
+      "nets": [
+        "5V"
+      ],
+      "track": 0.5,
+      "clearance": 0.15,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "why": "5 V to the LED chain; the chain's current is capped in firmware to the USB budget"
+    }
+  ],
+  "board": {
+    "width": 70.01,
+    "height": 91.01,
+    "layers": 4,
+    "planes": {},
+    "origin": [
+      100.0,
+      100.0
+    ],
+    "corner_radius": 0.0,
+    "shape": {
+      "type": "polygon",
+      "points": [
+        [
+          0.0,
+          0.005
+        ],
+        [
+          0.0,
+          41.998
+        ],
+        [
+          26.995,
+          74.4
+        ],
+        [
+          26.995,
+          90.993
+        ],
+        [
+          42.995,
+          90.993
+        ],
+        [
+          42.995,
+          74.4
+        ],
+        [
+          69.991,
+          41.998
+        ],
+        [
+          69.991,
+          0.005
+        ],
+        [
+          0.094,
+          0.0
+        ]
+      ],
+      "fillets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "mask_color": "White",
+    "rules": {
+      "clearance": 0.15,
+      "track": 0.2,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "edge_clearance": 0.5,
+      "hole_to_hole": 0.5,
+      "min_through_hole": 0.3,
+      "min_track": 0.15,
+      "why_min_track": "Freerouting necks into 0.65 mm-pitch TSSOP pins; JLCPCB multilayer builds 0.09 mm"
+    },
+    "notes": "4 signal layers routed by Freerouting (a plane layer reaches the router as an empty power layer, so it neither connects nor routes: measured on art_red_star, 32 open with two planes), then poured after routing."
+  },
+  "placement": {
+    "usb:J?": {
+      "edge": "bottom",
+      "x": 0.0,
+      "overhang": 0.6,
+      "why": "USB-C on the tab at the bottom"
+    },
+    "core:U?": {
+      "at": [
+        35.08,
+        32.79
+      ],
+      "rot": 0,
+      "why": "controller at the deepest point inside the outline"
+    },
+    "px1:D?": {
+      "lock": [
+        4.2,
+        9.485
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 1 of 21 on the outline inset 4.2 mm"
+    },
+    "px1:C?": {
+      "lock": [
+        7.2,
+        9.485
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 1's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px2:D?": {
+      "lock": [
+        4.2,
+        20.054
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 2 of 21 on the outline inset 4.2 mm"
+    },
+    "px2:C?": {
+      "lock": [
+        7.2,
+        20.054
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 2's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px3:D?": {
+      "lock": [
+        4.2,
+        30.624
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 3 of 21 on the outline inset 4.2 mm"
+    },
+    "px3:C?": {
+      "lock": [
+        7.2,
+        30.624
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 3's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px4:D?": {
+      "lock": [
+        4.658,
+        41.028
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 4 of 21 on the outline inset 4.2 mm"
+    },
+    "px4:C?": {
+      "lock": [
+        7.658,
+        41.028
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 4's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px5:D?": {
+      "lock": [
+        11.424,
+        49.148
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 5 of 21 on the outline inset 4.2 mm"
+    },
+    "px5:C?": {
+      "lock": [
+        14.424,
+        49.148
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 5's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px6:D?": {
+      "lock": [
+        18.189,
+        57.269
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6 of 21 on the outline inset 4.2 mm"
+    },
+    "px6:C?": {
+      "lock": [
+        21.189,
+        57.269
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px7:D?": {
+      "lock": [
+        24.955,
+        65.389
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7 of 21 on the outline inset 4.2 mm"
+    },
+    "px7:C?": {
+      "lock": [
+        27.955,
+        65.389
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px8:D?": {
+      "lock": [
+        31.151,
+        73.826
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 8 of 21 on the outline inset 4.2 mm"
+    },
+    "px8:C?": {
+      "lock": [
+        34.151,
+        73.826
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 8's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px9:D?": {
+      "lock": [
+        43.865,
+        66.795
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 9 of 21 on the outline inset 4.2 mm"
+    },
+    "px9:C?": {
+      "lock": [
+        40.865,
+        66.795
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 9's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px10:D?": {
+      "lock": [
+        50.63,
+        58.675
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 10 of 21 on the outline inset 4.2 mm"
+    },
+    "px10:C?": {
+      "lock": [
+        47.63,
+        58.675
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 10's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px11:D?": {
+      "lock": [
+        57.396,
+        50.554
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 11 of 21 on the outline inset 4.2 mm"
+    },
+    "px11:C?": {
+      "lock": [
+        54.396,
+        50.554
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 11's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px12:D?": {
+      "lock": [
+        64.161,
+        42.434
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 12 of 21 on the outline inset 4.2 mm"
+    },
+    "px12:C?": {
+      "lock": [
+        61.161,
+        42.434
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 12's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px13:D?": {
+      "lock": [
+        65.791,
+        32.454
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 13 of 21 on the outline inset 4.2 mm"
+    },
+    "px13:C?": {
+      "lock": [
+        62.791,
+        32.454
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 13's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px14:D?": {
+      "lock": [
+        65.791,
+        21.884
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 14 of 21 on the outline inset 4.2 mm"
+    },
+    "px14:C?": {
+      "lock": [
+        62.791,
+        21.884
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 14's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px15:D?": {
+      "lock": [
+        65.791,
+        11.315
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 15 of 21 on the outline inset 4.2 mm"
+    },
+    "px15:C?": {
+      "lock": [
+        62.791,
+        11.315
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 15's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px16:D?": {
+      "lock": [
+        62.332,
+        4.204
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 16 of 21 on the outline inset 4.2 mm"
+    },
+    "px16:C?": {
+      "lock": [
+        62.332,
+        7.204
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 16's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px17:D?": {
+      "lock": [
+        51.763,
+        4.203
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 17 of 21 on the outline inset 4.2 mm"
+    },
+    "px17:C?": {
+      "lock": [
+        51.763,
+        7.203
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 17's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px18:D?": {
+      "lock": [
+        41.193,
+        4.203
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 18 of 21 on the outline inset 4.2 mm"
+    },
+    "px18:C?": {
+      "lock": [
+        41.193,
+        7.203
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 18's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px19:D?": {
+      "lock": [
+        30.624,
+        4.202
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 19 of 21 on the outline inset 4.2 mm"
+    },
+    "px19:C?": {
+      "lock": [
+        30.624,
+        7.202
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 19's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px20:D?": {
+      "lock": [
+        20.054,
+        4.201
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 20 of 21 on the outline inset 4.2 mm"
+    },
+    "px20:C?": {
+      "lock": [
+        20.054,
+        7.201
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 20's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px21:D?": {
+      "lock": [
+        9.485,
+        4.201
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 21 of 21 on the outline inset 4.2 mm"
+    },
+    "px21:C?": {
+      "lock": [
+        9.485,
+        7.201
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 21's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "out:J?": {
+      "at": [
+        35.08,
+        28.29
+      ],
+      "rot": 90,
+      "why": "chain-out header above the controller"
+    }
+  },
+  "route": {
+    "passes": 30,
+    "fanout": true,
+    "solve_s": 300,
+    "why": "default ladder"
+  },
+  "stitch_pitch": 6.0,
+  "silk": {
+    "words": {
+      "core:SW?": "MODE",
+      "core:J?": "SWIO"
+    },
+    "title": [
+      {
+        "text": "PALADIN",
+        "y": 20.8,
+        "size": 1.6,
+        "bold": true
+      },
+      {
+        "text": "dented in a hundred battles",
+        "y": 23.3,
+        "size": 0.8
+      }
+    ]
+  },
+  "captions": {
+    "place_3d": "PALADIN: LEDs around the outline, the controller above the USB-C tab.",
+    "done_3d": "Paladin Shield LED art board"
+  }
+}

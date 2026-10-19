@@ -1,0 +1,421 @@
+{
+  "name": "art_compass_rose",
+  "title": "HeyPCB COMPASS - Compass Rose LED art board",
+  "revision": "A",
+  "brief": "Compass Rose LED art board: a star-shaped blue-mask board with 7 addressable RGB LEDs on its outline, a CH32V003 controller at 5 V, a mode button and USB-C power; 92.01 x 99.01 mm, 4 layers.",
+  "blocks": [
+    {
+      "block": "usb_c_data_5v",
+      "as": "usb",
+      "title": "USB-C 5 V in",
+      "nets": {
+        "VBUS": "5V"
+      }
+    },
+    {
+      "block": "ch32_led_core",
+      "as": "core",
+      "title": "CH32V003 LED controller",
+      "nets": {
+        "5V": "5V",
+        "LED_DATA": "D1"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px1",
+      "title": "LED 1",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D1",
+        "DOUT": "D2"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px2",
+      "title": "LED 2",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D2",
+        "DOUT": "D3"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px3",
+      "title": "LED 3",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D3",
+        "DOUT": "D4"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px4",
+      "title": "LED 4",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D4",
+        "DOUT": "D5"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px5",
+      "title": "LED 5",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D5",
+        "DOUT": "D6"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px6",
+      "title": "LED 6",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D6",
+        "DOUT": "D7"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px7",
+      "title": "LED 7",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D7",
+        "DOUT": "D8"
+      }
+    },
+    {
+      "block": "led_chain_out",
+      "as": "out",
+      "title": "LED chain out",
+      "nets": {
+        "5V": "5V",
+        "DOUT": "D8"
+      }
+    }
+  ],
+  "pwrFlags": [
+    "GND",
+    "5V"
+  ],
+  "netClasses": [
+    {
+      "name": "PWR",
+      "nets": [
+        "5V"
+      ],
+      "track": 0.5,
+      "clearance": 0.15,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "why": "5 V to the LED chain; the chain's current is capped in firmware to the USB budget"
+    }
+  ],
+  "board": {
+    "width": 92.01,
+    "height": 99.01,
+    "layers": 4,
+    "planes": {},
+    "origin": [
+      100.0,
+      100.0
+    ],
+    "corner_radius": 0.0,
+    "shape": {
+      "type": "polygon",
+      "points": [
+        [
+          78.527,
+          78.527
+        ],
+        [
+          63.554,
+          53.271
+        ],
+        [
+          92.0,
+          46.0
+        ],
+        [
+          63.554,
+          38.729
+        ],
+        [
+          78.527,
+          13.473
+        ],
+        [
+          53.271,
+          28.446
+        ],
+        [
+          46.0,
+          0.0
+        ],
+        [
+          38.729,
+          28.446
+        ],
+        [
+          13.473,
+          13.473
+        ],
+        [
+          28.446,
+          38.729
+        ],
+        [
+          0.0,
+          46.0
+        ],
+        [
+          28.446,
+          53.271
+        ],
+        [
+          13.473,
+          78.527
+        ],
+        [
+          38.0,
+          63.986
+        ],
+        [
+          38.0,
+          99.0
+        ],
+        [
+          54.0,
+          99.0
+        ],
+        [
+          54.0,
+          63.986
+        ]
+      ],
+      "fillets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "mask_color": "Blue",
+    "rules": {
+      "clearance": 0.15,
+      "track": 0.2,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "edge_clearance": 0.5,
+      "hole_to_hole": 0.5,
+      "min_through_hole": 0.3,
+      "min_track": 0.15,
+      "why_min_track": "Freerouting necks into 0.65 mm-pitch TSSOP pins; JLCPCB multilayer builds 0.09 mm"
+    },
+    "notes": "4 signal layers routed by Freerouting (a plane layer reaches the router as an empty power layer, so it neither connects nor routes: measured on art_red_star, 32 open with two planes), then poured after routing."
+  },
+  "placement": {
+    "usb:J?": {
+      "edge": "bottom",
+      "x": 0.0,
+      "overhang": 0.6,
+      "why": "USB-C on the tab at the bottom"
+    },
+    "core:U?": {
+      "at": [
+        46.1,
+        45.92
+      ],
+      "rot": 0,
+      "why": "controller at the deepest point inside the outline"
+    },
+    "px1:D?": {
+      "lock": [
+        45.746,
+        29.258
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 1 of 7 on the outline inset 7.0 mm"
+    },
+    "px1:C?": {
+      "lock": [
+        48.746,
+        29.258
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 1's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px2:D?": {
+      "lock": [
+        33.479,
+        33.492
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 2 of 7 on the outline inset 7.0 mm"
+    },
+    "px2:C?": {
+      "lock": [
+        36.479,
+        33.492
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 2's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px3:D?": {
+      "lock": [
+        29.188,
+        45.764
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 3 of 7 on the outline inset 7.0 mm"
+    },
+    "px3:C?": {
+      "lock": [
+        29.188,
+        48.764
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 3's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px4:D?": {
+      "lock": [
+        44.748,
+        62.154
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 4 of 7 on the outline inset 7.0 mm"
+    },
+    "px4:C?": {
+      "lock": [
+        47.748,
+        62.154
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 4's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px5:D?": {
+      "lock": [
+        45.0,
+        70.104
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 5 of 7 on the outline inset 7.0 mm"
+    },
+    "px5:C?": {
+      "lock": [
+        48.0,
+        70.104
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 5's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px6:D?": {
+      "lock": [
+        45.0,
+        78.077
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6 of 7 on the outline inset 7.0 mm"
+    },
+    "px6:C?": {
+      "lock": [
+        48.0,
+        78.077
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px7:D?": {
+      "lock": [
+        45.0,
+        86.05
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7 of 7 on the outline inset 7.0 mm"
+    },
+    "px7:C?": {
+      "lock": [
+        48.0,
+        86.05
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "out:J?": {
+      "at": [
+        46.1,
+        41.42
+      ],
+      "rot": 90,
+      "why": "chain-out header above the controller"
+    }
+  },
+  "route": {
+    "passes": 30,
+    "fanout": true,
+    "solve_s": 300,
+    "why": "default ladder"
+  },
+  "stitch_pitch": 6.0,
+  "silk": {
+    "words": {
+      "core:SW?": "MODE",
+      "core:J?": "SWIO"
+    },
+    "title": [
+      {
+        "text": "COMPASS",
+        "y": 33.9,
+        "size": 1.6,
+        "bold": true
+      },
+      {
+        "text": "a map to buried treasure",
+        "y": 36.4,
+        "size": 0.8
+      }
+    ]
+  },
+  "captions": {
+    "place_3d": "COMPASS: LEDs around the outline, the controller above the USB-C tab.",
+    "done_3d": "Compass Rose LED art board"
+  }
+}

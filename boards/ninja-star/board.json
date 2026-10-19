@@ -1,0 +1,475 @@
+{
+  "name": "art_ninja_star",
+  "title": "HeyPCB SHURIKEN - Ninja Star LED art board",
+  "revision": "A",
+  "brief": "Ninja Star LED art board: a star-shaped black-mask board with 10 addressable RGB LEDs on its outline, a CH32V003 controller at 5 V, a mode button and USB-C power; 92.01 x 99.01 mm, 4 layers.",
+  "blocks": [
+    {
+      "block": "usb_c_data_5v",
+      "as": "usb",
+      "title": "USB-C 5 V in",
+      "nets": {
+        "VBUS": "5V"
+      }
+    },
+    {
+      "block": "ch32_led_core",
+      "as": "core",
+      "title": "CH32V003 LED controller",
+      "nets": {
+        "5V": "5V",
+        "LED_DATA": "D1"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px1",
+      "title": "LED 1",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D1",
+        "DOUT": "D2"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px2",
+      "title": "LED 2",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D2",
+        "DOUT": "D3"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px3",
+      "title": "LED 3",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D3",
+        "DOUT": "D4"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px4",
+      "title": "LED 4",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D4",
+        "DOUT": "D5"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px5",
+      "title": "LED 5",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D5",
+        "DOUT": "D6"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px6",
+      "title": "LED 6",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D6",
+        "DOUT": "D7"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px7",
+      "title": "LED 7",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D7",
+        "DOUT": "D8"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px8",
+      "title": "LED 8",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D8",
+        "DOUT": "D9"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px9",
+      "title": "LED 9",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D9",
+        "DOUT": "D10"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px10",
+      "title": "LED 10",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D10",
+        "DOUT": "D11"
+      }
+    },
+    {
+      "block": "led_chain_out",
+      "as": "out",
+      "title": "LED chain out",
+      "nets": {
+        "5V": "5V",
+        "DOUT": "D11"
+      }
+    }
+  ],
+  "pwrFlags": [
+    "GND",
+    "5V"
+  ],
+  "netClasses": [
+    {
+      "name": "PWR",
+      "nets": [
+        "5V"
+      ],
+      "track": 0.5,
+      "clearance": 0.15,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "why": "5 V to the LED chain; the chain's current is capped in firmware to the USB budget"
+    }
+  ],
+  "board": {
+    "width": 92.01,
+    "height": 99.01,
+    "layers": 4,
+    "planes": {},
+    "origin": [
+      100.0,
+      100.0
+    ],
+    "corner_radius": 0.0,
+    "shape": {
+      "type": "polygon",
+      "points": [
+        [
+          57.314,
+          57.314
+        ],
+        [
+          92.0,
+          46.0
+        ],
+        [
+          57.314,
+          34.686
+        ],
+        [
+          46.0,
+          0.0
+        ],
+        [
+          34.686,
+          34.686
+        ],
+        [
+          0.0,
+          46.0
+        ],
+        [
+          34.686,
+          57.314
+        ],
+        [
+          38.0,
+          67.473
+        ],
+        [
+          38.0,
+          99.0
+        ],
+        [
+          54.0,
+          99.0
+        ],
+        [
+          54.0,
+          67.473
+        ]
+      ],
+      "fillets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "mask_color": "Black",
+    "rules": {
+      "clearance": 0.15,
+      "track": 0.2,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "edge_clearance": 0.5,
+      "hole_to_hole": 0.5,
+      "min_through_hole": 0.3,
+      "min_track": 0.15,
+      "why_min_track": "Freerouting necks into 0.65 mm-pitch TSSOP pins; JLCPCB multilayer builds 0.09 mm"
+    },
+    "notes": "4 signal layers routed by Freerouting (a plane layer reaches the router as an empty power layer, so it neither connects nor routes: measured on art_red_star, 32 open with two planes), then poured after routing."
+  },
+  "placement": {
+    "usb:J?": {
+      "edge": "bottom",
+      "x": 0.0,
+      "overhang": 0.6,
+      "why": "USB-C on the tab at the bottom"
+    },
+    "core:U?": {
+      "at": [
+        45.9,
+        45.92
+      ],
+      "rot": 0,
+      "why": "controller at the deepest point inside the outline"
+    },
+    "px1:D?": {
+      "lock": [
+        68.031,
+        46.455
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 1 of 10 on the outline inset 7.0 mm"
+    },
+    "px1:C?": {
+      "lock": [
+        68.031,
+        43.455
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 1's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px2:D?": {
+      "lock": [
+        63.165,
+        43.958
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 2 of 10 on the outline inset 7.0 mm"
+    },
+    "px2:C?": {
+      "lock": [
+        63.165,
+        46.958
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 2's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px3:D?": {
+      "lock": [
+        47.823,
+        28.162
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 3 of 10 on the outline inset 7.0 mm"
+    },
+    "px3:C?": {
+      "lock": [
+        44.823,
+        28.162
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 3's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px4:D?": {
+      "lock": [
+        42.828,
+        32.299
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 4 of 10 on the outline inset 7.0 mm"
+    },
+    "px4:C?": {
+      "lock": [
+        45.828,
+        32.299
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 4's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px5:D?": {
+      "lock": [
+        24.698,
+        45.307
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 5 of 10 on the outline inset 7.0 mm"
+    },
+    "px5:C?": {
+      "lock": [
+        24.698,
+        48.307
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 5's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px6:D?": {
+      "lock": [
+        43.939,
+        63.109
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6 of 10 on the outline inset 7.0 mm"
+    },
+    "px6:C?": {
+      "lock": [
+        46.939,
+        63.109
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px7:D?": {
+      "lock": [
+        45.0,
+        71.014
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7 of 10 on the outline inset 7.0 mm"
+    },
+    "px7:C?": {
+      "lock": [
+        48.0,
+        71.014
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px8:D?": {
+      "lock": [
+        45.0,
+        79.068
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 8 of 10 on the outline inset 7.0 mm"
+    },
+    "px8:C?": {
+      "lock": [
+        48.0,
+        79.068
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 8's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px9:D?": {
+      "lock": [
+        45.0,
+        87.122
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 9 of 10 on the outline inset 7.0 mm"
+    },
+    "px9:C?": {
+      "lock": [
+        48.0,
+        87.122
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 9's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px10:D?": {
+      "lock": [
+        49.41,
+        58.972
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 10 of 10 on the outline inset 7.0 mm"
+    },
+    "px10:C?": {
+      "lock": [
+        46.41,
+        58.972
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 10's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "out:J?": {
+      "at": [
+        45.9,
+        41.42
+      ],
+      "rot": 90,
+      "why": "chain-out header above the controller"
+    }
+  },
+  "route": {
+    "passes": 30,
+    "fanout": true,
+    "solve_s": 300,
+    "why": "default ladder"
+  },
+  "stitch_pitch": 6.0,
+  "silk": {
+    "words": {
+      "core:SW?": "MODE",
+      "core:J?": "SWIO"
+    },
+    "title": [
+      {
+        "text": "SHURIKEN",
+        "y": 33.9,
+        "size": 1.6,
+        "bold": true
+      },
+      {
+        "text": "thrown from the shadows",
+        "y": 36.4,
+        "size": 0.8
+      }
+    ]
+  },
+  "captions": {
+    "place_3d": "SHURIKEN: LEDs around the outline, the controller above the USB-C tab.",
+    "done_3d": "Ninja Star LED art board"
+  }
+}

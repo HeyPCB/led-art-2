@@ -20,6 +20,13 @@
       "summary": "An apple, for the one that fell on the right head and turned into a theory of gravity."
     },
     {
+      "slug": "bone-skull",
+      "path": "boards/bone-skull",
+      "title": "HeyPCB Bones",
+      "role": "Bones LED art, white mask",
+      "summary": "A bone-white skull from a pirate film's cursed treasure."
+    },
+    {
       "slug": "bright-idea",
       "path": "boards/bright-idea",
       "title": "HeyPCB Eureka",
@@ -32,6 +39,34 @@
       "title": "HeyPCB Champion",
       "role": "Champion LED art, yellow mask",
       "summary": "A trophy cup from the sports film where the underdog loses every game in the first act."
+    },
+    {
+      "slug": "clock-face",
+      "path": "boards/clock-face",
+      "title": "HeyPCB Clock",
+      "role": "Clock LED art, black mask",
+      "summary": "A twelve-sided clock face for the time-travel film where the inventor's machine fails until the lightning strikes."
+    },
+    {
+      "slug": "clockwork",
+      "path": "boards/clockwork",
+      "title": "HeyPCB Clockwork",
+      "role": "Clockwork LED art, yellow mask",
+      "summary": "A big-toothed gear from a steampunk inventor's workshop, where half the machines explode."
+    },
+    {
+      "slug": "compass-rose",
+      "path": "boards/compass-rose",
+      "title": "HeyPCB Compass",
+      "role": "Compass LED art, blue mask",
+      "summary": "An eight-point compass rose from a pirate treasure map. The first two maps were always fakes."
+    },
+    {
+      "slug": "decagon-dial",
+      "path": "boards/decagon-dial",
+      "title": "HeyPCB Dial",
+      "role": "Dial LED art, white mask",
+      "summary": "A ten-sided radio dial from a film about a signal from somewhere else."
     },
     {
       "slug": "desert-cactus",
@@ -48,11 +83,67 @@
       "summary": "A snowman from every winter holiday film: two snowballs and a lot of rebuilding after the first one fell over."
     },
     {
+      "slug": "fruit-bat",
+      "path": "boards/fruit-bat",
+      "title": "HeyPCB Fruit Bat",
+      "role": "Fruit Bat LED art, purple mask",
+      "summary": "A wide-winged bat leaving the cave at dusk."
+    },
+    {
+      "slug": "giant-heart",
+      "path": "boards/giant-heart",
+      "title": "HeyPCB Big Heart",
+      "role": "Big Heart LED art, white mask",
+      "summary": "A big white heart, the one the tin man went looking for."
+    },
+    {
+      "slug": "ice-gem",
+      "path": "boards/ice-gem",
+      "title": "HeyPCB Ice Gem",
+      "role": "Ice Gem LED art, blue mask",
+      "summary": "A blue gem from an ice palace in an animated fairy tale."
+    },
+    {
       "slug": "jack-lantern",
       "path": "boards/jack-lantern",
       "title": "HeyPCB Jack",
       "role": "Jack LED art, yellow mask",
       "summary": "A three-lobed pumpkin for a Halloween horror double bill. The first carving always goes wrong."
+    },
+    {
+      "slug": "jumbo-cloud",
+      "path": "boards/jumbo-cloud",
+      "title": "HeyPCB Sky High",
+      "role": "Sky High LED art, blue mask",
+      "summary": "A big cloud for the film where an old man ties balloons to his house and flies away."
+    },
+    {
+      "slug": "love-bug",
+      "path": "boards/love-bug",
+      "title": "HeyPCB Love Bug",
+      "role": "Love Bug LED art, red mask",
+      "summary": "A small red heart for the romantic comedy where the first date goes completely wrong."
+    },
+    {
+      "slug": "mega-gear",
+      "path": "boards/mega-gear",
+      "title": "HeyPCB Mega Gear",
+      "role": "Mega Gear LED art, white mask",
+      "summary": "A twenty-tooth gear with a centre hole, from the clock tower in a chase scene."
+    },
+    {
+      "slug": "moth",
+      "path": "boards/moth",
+      "title": "HeyPCB Moth",
+      "role": "Moth LED art, white mask",
+      "summary": "A white moth, drawn to the light, from a creature feature."
+    },
+    {
+      "slug": "mothership",
+      "path": "boards/mothership",
+      "title": "HeyPCB Mothership",
+      "role": "Mothership LED art, purple mask",
+      "summary": "The biggest saucer in the set, hovering over the desert and playing five tones."
     },
     {
       "slug": "night-owl",
@@ -62,11 +153,39 @@
       "summary": "An owl with tufted ears, the kind that delivers letters in a wizarding film."
     },
     {
+      "slug": "ninja-star",
+      "path": "boards/ninja-star",
+      "title": "HeyPCB Shuriken",
+      "role": "Shuriken LED art, black mask",
+      "summary": "A four-point throwing star from a martial-arts film, in black mask."
+    },
+    {
+      "slug": "nonagon",
+      "path": "boards/nonagon",
+      "title": "HeyPCB Nine",
+      "role": "Nine LED art, purple mask",
+      "summary": "A nine-sided tile from a puzzle-box film, where every wrong move teaches the next one."
+    },
+    {
+      "slug": "paladin",
+      "path": "boards/paladin",
+      "title": "HeyPCB Paladin",
+      "role": "Paladin LED art, white mask",
+      "summary": "A white knight's shield, dented in a hundred battles."
+    },
+    {
       "slug": "pixel-raider",
       "path": "boards/pixel-raider",
       "title": "HeyPCB Raider",
       "role": "Raider LED art, purple mask",
       "summary": "A bigger, purple pixel alien. Game over is just the screen that asks whether you want to try again."
+    },
+    {
+      "slug": "portal-ring",
+      "path": "boards/portal-ring",
+      "title": "HeyPCB Portal",
+      "role": "Portal LED art, green mask",
+      "summary": "A green portal ring. Step through, and the experiment either works or it doesn't."
     },
     {
       "slug": "sea-turtle",
@@ -83,11 +202,46 @@
       "summary": "An astronaut's helmet, for the mission that went wrong and still brought the crew home."
     },
     {
+      "slug": "square-one",
+      "path": "boards/square-one",
+      "title": "HeyPCB Square One",
+      "role": "Square One LED art, blue mask",
+      "summary": "A plain square, for going back to square one. Most inventions start there more than once."
+    },
+    {
+      "slug": "starburst",
+      "path": "boards/starburst",
+      "title": "HeyPCB Starburst",
+      "role": "Starburst LED art, yellow mask",
+      "summary": "A ten-point starburst like the flash on an opening-night poster."
+    },
+    {
       "slug": "starfighter",
       "path": "boards/starfighter",
       "title": "HeyPCB Starfighter",
       "role": "Starfighter LED art, white mask",
       "summary": "A delta-wing starfighter from a space-opera hangar. Test pilots crash the prototypes so the final ship flies."
+    },
+    {
+      "slug": "sunset-disc",
+      "path": "boards/sunset-disc",
+      "title": "HeyPCB Sunset",
+      "role": "Sunset LED art, red mask",
+      "summary": "A twelve-ray sun in red, for the hero riding off into the sunset in the last shot."
+    },
+    {
+      "slug": "tiny-moon",
+      "path": "boards/tiny-moon",
+      "title": "HeyPCB Luna",
+      "role": "Luna LED art, purple mask",
+      "summary": "A small round moon, the smallest board in the set."
+    },
+    {
+      "slug": "warp-ring",
+      "path": "boards/warp-ring",
+      "title": "HeyPCB Warp",
+      "role": "Warp LED art, blue mask",
+      "summary": "A ring like the gate in a space-travel film, with light chasing round the rim."
     },
     {
       "slug": "yellow-sub",
