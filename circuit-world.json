@@ -6,6 +6,13 @@
   },
   "boards": [
     {
+      "slug": "angler",
+      "path": "boards/angler",
+      "title": "HeyPCB Angler",
+      "role": "Angler LED art, black mask",
+      "summary": "A big black fish from the deepest scene of an ocean adventure."
+    },
+    {
       "slug": "atom-age",
       "path": "boards/atom-age",
       "title": "HeyPCB Atomic",
@@ -62,6 +69,20 @@
       "summary": "An eight-point compass rose from a pirate treasure map. The first two maps were always fakes."
     },
     {
+      "slug": "cub-paw",
+      "path": "boards/cub-paw",
+      "title": "HeyPCB Cub",
+      "role": "Cub LED art, red mask",
+      "summary": "A small paw print from the cub who has to grow into king."
+    },
+    {
+      "slug": "cyber-cat",
+      "path": "boards/cyber-cat",
+      "title": "HeyPCB Cyber Cat",
+      "role": "Cyber Cat LED art, blue mask",
+      "summary": "A cat head in blue mask, from a neon cyberpunk city."
+    },
+    {
       "slug": "decagon-dial",
       "path": "boards/decagon-dial",
       "title": "HeyPCB Dial",
@@ -76,6 +97,13 @@
       "summary": "A saguaro cactus that stands in every spaghetti-western standoff, waiting for high noon."
     },
     {
+      "slug": "flash-bolt",
+      "path": "boards/flash-bolt",
+      "title": "HeyPCB Flash",
+      "role": "Flash LED art, purple mask",
+      "summary": "A purple lightning bolt for the lab accident that turned into a superpower."
+    },
+    {
       "slug": "frosty",
       "path": "boards/frosty",
       "title": "HeyPCB Frosty",
@@ -88,6 +116,13 @@
       "title": "HeyPCB Fruit Bat",
       "role": "Fruit Bat LED art, purple mask",
       "summary": "A wide-winged bat leaving the cave at dusk."
+    },
+    {
+      "slug": "gas-giant",
+      "path": "boards/gas-giant",
+      "title": "HeyPCB Giant",
+      "role": "Giant LED art, yellow mask",
+      "summary": "A yellow ringed gas giant from a deep-space voyage film."
     },
     {
       "slug": "giant-heart",
@@ -118,6 +153,20 @@
       "summary": "A big cloud for the film where an old man ties balloons to his house and flies away."
     },
     {
+      "slug": "kings-crown",
+      "path": "boards/kings-crown",
+      "title": "HeyPCB King",
+      "role": "King LED art, black mask",
+      "summary": "A black crown for the king who loses his throne in act one and wins it back in act three."
+    },
+    {
+      "slug": "log-cabin",
+      "path": "boards/log-cabin",
+      "title": "HeyPCB Cabin",
+      "role": "Cabin LED art, red mask",
+      "summary": "A red cabin in the woods. In films, nobody should go in."
+    },
+    {
       "slug": "love-bug",
       "path": "boards/love-bug",
       "title": "HeyPCB Love Bug",
@@ -125,11 +174,32 @@
       "summary": "A small red heart for the romantic comedy where the first date goes completely wrong."
     },
     {
+      "slug": "maple-leaf",
+      "path": "boards/maple-leaf",
+      "title": "HeyPCB Maple",
+      "role": "Maple LED art, red mask",
+      "summary": "A red leaf falling in an autumn scene."
+    },
+    {
+      "slug": "mech",
+      "path": "boards/mech",
+      "title": "HeyPCB Mech",
+      "role": "Mech LED art, black mask",
+      "summary": "A boxy robot head, rebuilt from scrap after the first one was crushed."
+    },
+    {
       "slug": "mega-gear",
       "path": "boards/mega-gear",
       "title": "HeyPCB Mega Gear",
       "role": "Mega Gear LED art, white mask",
       "summary": "A twenty-tooth gear with a centre hole, from the clock tower in a chase scene."
+    },
+    {
+      "slug": "melody",
+      "path": "boards/melody",
+      "title": "HeyPCB Melody",
+      "role": "Melody LED art, black mask",
+      "summary": "A musical note from the song the whole musical builds up to."
     },
     {
       "slug": "moth",
@@ -174,6 +244,13 @@
       "summary": "A white knight's shield, dented in a hundred battles."
     },
     {
+      "slug": "phantom",
+      "path": "boards/phantom",
+      "title": "HeyPCB Phantom",
+      "role": "Phantom LED art, black mask",
+      "summary": "A black phantom haunting the opera house."
+    },
+    {
       "slug": "pixel-raider",
       "path": "boards/pixel-raider",
       "title": "HeyPCB Raider",
@@ -193,6 +270,13 @@
       "title": "HeyPCB Turtle",
       "role": "Turtle LED art, green mask",
       "summary": "A sea turtle riding the ocean current in an underwater animated film."
+    },
+    {
+      "slug": "snow-pine",
+      "path": "boards/snow-pine",
+      "title": "HeyPCB Pine",
+      "role": "Pine LED art, white mask",
+      "summary": "A white pine tree from a frozen-forest fairy tale."
     },
     {
       "slug": "space-helmet",
@@ -235,6 +319,13 @@
       "title": "HeyPCB Luna",
       "role": "Luna LED art, purple mask",
       "summary": "A small round moon, the smallest board in the set."
+    },
+    {
+      "slug": "vault-key",
+      "path": "boards/vault-key",
+      "title": "HeyPCB Vault",
+      "role": "Vault LED art, blue mask",
+      "summary": "The long key for the heist film's vault. The first plan always fails."
     },
     {
       "slug": "warp-ring",

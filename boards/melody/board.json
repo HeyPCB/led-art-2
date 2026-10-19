@@ -1,0 +1,566 @@
+{
+  "name": "art_melody",
+  "title": "HeyPCB MELODY - Music Note LED art board",
+  "revision": "A",
+  "brief": "Music Note LED art board: a note-shaped black-mask board with 7 addressable RGB LEDs on its outline, a CH32V003 controller at 5 V, a mode button and USB-C power; 55.57 x 101.55 mm, 4 layers.",
+  "blocks": [
+    {
+      "block": "usb_c_data_5v",
+      "as": "usb",
+      "title": "USB-C 5 V in",
+      "nets": {
+        "VBUS": "5V"
+      }
+    },
+    {
+      "block": "ch32_led_core",
+      "as": "core",
+      "title": "CH32V003 LED controller",
+      "nets": {
+        "5V": "5V",
+        "LED_DATA": "D1"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px1",
+      "title": "LED 1",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D1",
+        "DOUT": "D2"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px2",
+      "title": "LED 2",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D2",
+        "DOUT": "D3"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px3",
+      "title": "LED 3",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D3",
+        "DOUT": "D4"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px4",
+      "title": "LED 4",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D4",
+        "DOUT": "D5"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px5",
+      "title": "LED 5",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D5",
+        "DOUT": "D6"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px6",
+      "title": "LED 6",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D6",
+        "DOUT": "D7"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px7",
+      "title": "LED 7",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D7",
+        "DOUT": "D8"
+      }
+    },
+    {
+      "block": "led_chain_out",
+      "as": "out",
+      "title": "LED chain out",
+      "nets": {
+        "5V": "5V",
+        "DOUT": "D8"
+      }
+    }
+  ],
+  "pwrFlags": [
+    "GND",
+    "5V"
+  ],
+  "netClasses": [
+    {
+      "name": "PWR",
+      "nets": [
+        "5V"
+      ],
+      "track": 0.5,
+      "clearance": 0.15,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "why": "5 V to the LED chain; the chain's current is capped in firmware to the USB budget"
+    }
+  ],
+  "board": {
+    "width": 55.57,
+    "height": 101.55,
+    "layers": 4,
+    "planes": {},
+    "origin": [
+      100.0,
+      100.0
+    ],
+    "corner_radius": 0.0,
+    "shape": {
+      "type": "polygon",
+      "points": [
+        [
+          19.764,
+          69.514
+        ],
+        [
+          17.529,
+          69.486
+        ],
+        [
+          15.475,
+          69.691
+        ],
+        [
+          12.955,
+          70.237
+        ],
+        [
+          10.972,
+          70.904
+        ],
+        [
+          9.05,
+          71.768
+        ],
+        [
+          7.257,
+          72.801
+        ],
+        [
+          5.606,
+          73.992
+        ],
+        [
+          4.125,
+          75.32
+        ],
+        [
+          2.84,
+          76.762
+        ],
+        [
+          1.772,
+          78.294
+        ],
+        [
+          0.94,
+          79.89
+        ],
+        [
+          0.261,
+          81.905
+        ],
+        [
+          0.0,
+          83.571
+        ],
+        [
+          0.012,
+          85.181
+        ],
+        [
+          0.291,
+          86.737
+        ],
+        [
+          0.99,
+          88.535
+        ],
+        [
+          1.4,
+          89.248
+        ],
+        [
+          2.107,
+          90.214
+        ],
+        [
+          2.943,
+          91.102
+        ],
+        [
+          3.9,
+          91.902
+        ],
+        [
+          4.968,
+          92.607
+        ],
+        [
+          6.139,
+          93.209
+        ],
+        [
+          7.401,
+          93.704
+        ],
+        [
+          8.719,
+          94.082
+        ],
+        [
+          11.114,
+          94.465
+        ],
+        [
+          12.598,
+          94.532
+        ],
+        [
+          14.112,
+          94.479
+        ],
+        [
+          15.64,
+          94.305
+        ],
+        [
+          17.148,
+          94.017
+        ],
+        [
+          19.764,
+          93.236
+        ],
+        [
+          19.764,
+          101.532
+        ],
+        [
+          35.764,
+          101.532
+        ],
+        [
+          35.764,
+          47.265
+        ],
+        [
+          33.557,
+          47.265
+        ],
+        [
+          33.587,
+          19.007
+        ],
+        [
+          33.907,
+          18.341
+        ],
+        [
+          34.506,
+          17.909
+        ],
+        [
+          35.239,
+          17.815
+        ],
+        [
+          35.928,
+          18.082
+        ],
+        [
+          49.557,
+          29.996
+        ],
+        [
+          55.555,
+          17.999
+        ],
+        [
+          33.557,
+          0.0
+        ],
+        [
+          27.559,
+          0.0
+        ],
+        [
+          27.557,
+          47.265
+        ],
+        [
+          19.764,
+          47.265
+        ]
+      ],
+      "fillets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "mask_color": "Black",
+    "rules": {
+      "clearance": 0.15,
+      "track": 0.2,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "edge_clearance": 0.5,
+      "hole_to_hole": 0.5,
+      "min_through_hole": 0.3,
+      "min_track": 0.15,
+      "why_min_track": "Freerouting necks into 0.65 mm-pitch TSSOP pins; JLCPCB multilayer builds 0.09 mm"
+    },
+    "notes": "4 signal layers routed by Freerouting (a plane layer reaches the router as an empty power layer, so it neither connects nor routes: measured on art_red_star, 32 open with two planes), then poured after routing."
+  },
+  "placement": {
+    "usb:J?": {
+      "edge": "bottom",
+      "x": 0.0,
+      "overhang": 0.6,
+      "why": "USB-C on the tab at the bottom"
+    },
+    "core:U?": {
+      "at": [
+        23.41,
+        81.3
+      ],
+      "rot": 0,
+      "why": "controller at the deepest point inside the outline"
+    },
+    "px1:D?": {
+      "lock": [
+        7.019,
+        78.097
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 1 of 7 on the outline inset 4.0 mm"
+    },
+    "px1:C?": {
+      "lock": [
+        10.019,
+        78.097
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 1's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px2:D?": {
+      "lock": [
+        4.136,
+        83.013
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 2 of 7 on the outline inset 4.0 mm"
+    },
+    "px2:C?": {
+      "lock": [
+        7.136,
+        83.013
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 2's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px3:D?": {
+      "lock": [
+        31.764,
+        67.201
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 3 of 7 on the outline inset 4.0 mm"
+    },
+    "px3:C?": {
+      "lock": [
+        28.764,
+        67.201
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 3's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px4:D?": {
+      "lock": [
+        31.764,
+        61.422
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 4 of 7 on the outline inset 4.0 mm"
+    },
+    "px4:C?": {
+      "lock": [
+        28.764,
+        61.422
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 4's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px5:D?": {
+      "lock": [
+        31.764,
+        55.644
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 5 of 7 on the outline inset 4.0 mm"
+    },
+    "px5:C?": {
+      "lock": [
+        28.764,
+        55.644
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 5's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px6:D?": {
+      "lock": [
+        30.958,
+        50.301
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 6 of 7 on the outline inset 4.0 mm"
+    },
+    "px6:C?": {
+      "lock": [
+        30.958,
+        47.301
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 6's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px7:D?": {
+      "lock": [
+        25.739,
+        51.265
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 7 of 7 on the outline inset 4.0 mm"
+    },
+    "px7:C?": {
+      "lock": [
+        25.739,
+        54.265
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 7's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "out:J?": {
+      "at": [
+        23.41,
+        76.8
+      ],
+      "rot": 90,
+      "why": "chain-out header above the controller"
+    }
+  },
+  "route": {
+    "passes": 30,
+    "fanout": true,
+    "solve_s": 300,
+    "why": "default ladder"
+  },
+  "stitch_pitch": 6.0,
+  "silk": {
+    "words": {
+      "core:SW?": "MODE",
+      "core:J?": "SWIO"
+    },
+    "title": [
+      {
+        "text": "MELODY",
+        "y": 69.3,
+        "size": 1.6,
+        "bold": true
+      },
+      {
+        "text": "the song from the musical",
+        "y": 71.8,
+        "size": 0.8
+      }
+    ]
+  },
+  "captions": {
+    "place_3d": "MELODY: LEDs around the outline, the controller above the USB-C tab.",
+    "done_3d": "Music Note LED art board"
+  }
+}
