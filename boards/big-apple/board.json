@@ -1,0 +1,1278 @@
+{
+  "name": "art_big_apple",
+  "title": "HeyPCB GRAVITY - Apple LED art board",
+  "revision": "A",
+  "brief": "Apple LED art board: a apple-shaped red-mask board with 21 addressable RGB LEDs on its outline, a CH32V003 controller at 5 V, a mode button and USB-C power; 82.77 x 69.86 mm, 4 layers.",
+  "blocks": [
+    {
+      "block": "usb_c_data_5v",
+      "as": "usb",
+      "title": "USB-C 5 V in",
+      "nets": {
+        "VBUS": "5V"
+      }
+    },
+    {
+      "block": "ch32_led_core",
+      "as": "core",
+      "title": "CH32V003 LED controller",
+      "nets": {
+        "5V": "5V",
+        "LED_DATA": "D1"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px1",
+      "title": "LED 1",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D1",
+        "DOUT": "D2"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px2",
+      "title": "LED 2",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D2",
+        "DOUT": "D3"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px3",
+      "title": "LED 3",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D3",
+        "DOUT": "D4"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px4",
+      "title": "LED 4",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D4",
+        "DOUT": "D5"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px5",
+      "title": "LED 5",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D5",
+        "DOUT": "D6"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px6",
+      "title": "LED 6",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D6",
+        "DOUT": "D7"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px7",
+      "title": "LED 7",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D7",
+        "DOUT": "D8"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px8",
+      "title": "LED 8",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D8",
+        "DOUT": "D9"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px9",
+      "title": "LED 9",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D9",
+        "DOUT": "D10"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px10",
+      "title": "LED 10",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D10",
+        "DOUT": "D11"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px11",
+      "title": "LED 11",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D11",
+        "DOUT": "D12"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px12",
+      "title": "LED 12",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D12",
+        "DOUT": "D13"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px13",
+      "title": "LED 13",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D13",
+        "DOUT": "D14"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px14",
+      "title": "LED 14",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D14",
+        "DOUT": "D15"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px15",
+      "title": "LED 15",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D15",
+        "DOUT": "D16"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px16",
+      "title": "LED 16",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D16",
+        "DOUT": "D17"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px17",
+      "title": "LED 17",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D17",
+        "DOUT": "D18"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px18",
+      "title": "LED 18",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D18",
+        "DOUT": "D19"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px19",
+      "title": "LED 19",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D19",
+        "DOUT": "D20"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px20",
+      "title": "LED 20",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D20",
+        "DOUT": "D21"
+      }
+    },
+    {
+      "block": "pixel_xl2020",
+      "as": "px21",
+      "title": "LED 21",
+      "nets": {
+        "5V": "5V",
+        "DIN": "D21",
+        "DOUT": "D22"
+      }
+    },
+    {
+      "block": "led_chain_out",
+      "as": "out",
+      "title": "LED chain out",
+      "nets": {
+        "5V": "5V",
+        "DOUT": "D22"
+      }
+    }
+  ],
+  "pwrFlags": [
+    "GND",
+    "5V"
+  ],
+  "netClasses": [
+    {
+      "name": "PWR",
+      "nets": [
+        "5V"
+      ],
+      "track": 0.5,
+      "clearance": 0.15,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "why": "5 V to the LED chain; the chain's current is capped in firmware to the USB budget"
+    }
+  ],
+  "board": {
+    "width": 82.77,
+    "height": 69.86,
+    "layers": 4,
+    "planes": {},
+    "origin": [
+      100.0,
+      100.0
+    ],
+    "corner_radius": 0.0,
+    "shape": {
+      "type": "polygon",
+      "points": [
+        [
+          41.567,
+          10.02
+        ],
+        [
+          41.396,
+          10.586
+        ],
+        [
+          40.927,
+          11.217
+        ],
+        [
+          40.25,
+          11.618
+        ],
+        [
+          39.472,
+          11.727
+        ],
+        [
+          38.893,
+          11.606
+        ],
+        [
+          37.312,
+          10.901
+        ],
+        [
+          35.449,
+          10.209
+        ],
+        [
+          32.247,
+          9.366
+        ],
+        [
+          30.284,
+          9.052
+        ],
+        [
+          28.328,
+          8.883
+        ],
+        [
+          25.017,
+          8.922
+        ],
+        [
+          22.363,
+          9.25
+        ],
+        [
+          19.778,
+          9.831
+        ],
+        [
+          17.263,
+          10.664
+        ],
+        [
+          14.275,
+          12.032
+        ],
+        [
+          11.981,
+          13.407
+        ],
+        [
+          9.347,
+          15.413
+        ],
+        [
+          6.978,
+          17.727
+        ],
+        [
+          4.91,
+          20.313
+        ],
+        [
+          3.185,
+          23.111
+        ],
+        [
+          1.805,
+          26.121
+        ],
+        [
+          0.804,
+          29.277
+        ],
+        [
+          0.282,
+          31.9
+        ],
+        [
+          0.0,
+          35.175
+        ],
+        [
+          0.064,
+          37.824
+        ],
+        [
+          0.391,
+          40.478
+        ],
+        [
+          1.151,
+          43.676
+        ],
+        [
+          2.052,
+          46.194
+        ],
+        [
+          3.493,
+          49.147
+        ],
+        [
+          4.91,
+          51.387
+        ],
+        [
+          6.555,
+          53.495
+        ],
+        [
+          7.908,
+          54.95
+        ],
+        [
+          9.347,
+          56.286
+        ],
+        [
+          12.001,
+          58.306
+        ],
+        [
+          13.694,
+          59.348
+        ],
+        [
+          15.436,
+          60.252
+        ],
+        [
+          18.534,
+          61.491
+        ],
+        [
+          20.419,
+          62.038
+        ],
+        [
+          22.363,
+          62.45
+        ],
+        [
+          25.679,
+          62.818
+        ],
+        [
+          27.666,
+          62.841
+        ],
+        [
+          29.626,
+          62.721
+        ],
+        [
+          31.595,
+          62.454
+        ],
+        [
+          33.391,
+          62.079
+        ],
+        [
+          33.391,
+          69.85
+        ],
+        [
+          49.391,
+          69.85
+        ],
+        [
+          49.391,
+          62.079
+        ],
+        [
+          51.842,
+          62.559
+        ],
+        [
+          54.479,
+          62.818
+        ],
+        [
+          57.128,
+          62.817
+        ],
+        [
+          59.765,
+          62.556
+        ],
+        [
+          62.364,
+          62.038
+        ],
+        [
+          64.899,
+          61.267
+        ],
+        [
+          67.346,
+          60.252
+        ],
+        [
+          69.683,
+          59.002
+        ],
+        [
+          72.393,
+          57.143
+        ],
+        [
+          74.418,
+          55.396
+        ],
+        [
+          76.655,
+          52.988
+        ],
+        [
+          78.248,
+          50.84
+        ],
+        [
+          79.903,
+          48.0
+        ],
+        [
+          80.986,
+          45.555
+        ],
+        [
+          81.979,
+          42.422
+        ],
+        [
+          82.501,
+          39.799
+        ],
+        [
+          82.758,
+          37.187
+        ],
+        [
+          82.759,
+          34.537
+        ],
+        [
+          82.501,
+          31.9
+        ],
+        [
+          82.133,
+          29.922
+        ],
+        [
+          81.432,
+          27.392
+        ],
+        [
+          80.48,
+          24.92
+        ],
+        [
+          79.597,
+          23.111
+        ],
+        [
+          78.234,
+          20.839
+        ],
+        [
+          76.244,
+          18.224
+        ],
+        [
+          74.4,
+          16.287
+        ],
+        [
+          71.865,
+          14.156
+        ],
+        [
+          69.11,
+          12.364
+        ],
+        [
+          66.722,
+          11.161
+        ],
+        [
+          63.641,
+          10.016
+        ],
+        [
+          60.419,
+          9.25
+        ],
+        [
+          57.277,
+          8.854
+        ],
+        [
+          56.738,
+          8.622
+        ],
+        [
+          56.426,
+          8.385
+        ],
+        [
+          56.059,
+          7.926
+        ],
+        [
+          55.896,
+          7.57
+        ],
+        [
+          55.805,
+          7.188
+        ],
+        [
+          55.813,
+          6.601
+        ],
+        [
+          55.99,
+          6.042
+        ],
+        [
+          56.578,
+          4.999
+        ],
+        [
+          56.947,
+          4.11
+        ],
+        [
+          57.154,
+          3.271
+        ],
+        [
+          57.201,
+          2.675
+        ],
+        [
+          57.134,
+          2.029
+        ],
+        [
+          56.96,
+          1.511
+        ],
+        [
+          56.658,
+          1.031
+        ],
+        [
+          56.268,
+          0.656
+        ],
+        [
+          55.497,
+          0.241
+        ],
+        [
+          54.647,
+          0.036
+        ],
+        [
+          53.475,
+          0.0
+        ],
+        [
+          52.448,
+          0.129
+        ],
+        [
+          51.357,
+          0.393
+        ],
+        [
+          50.197,
+          0.796
+        ],
+        [
+          48.69,
+          1.494
+        ],
+        [
+          47.535,
+          2.162
+        ],
+        [
+          46.442,
+          2.909
+        ],
+        [
+          45.106,
+          4.0
+        ],
+        [
+          44.176,
+          4.91
+        ],
+        [
+          43.159,
+          6.12
+        ],
+        [
+          42.519,
+          7.081
+        ],
+        [
+          41.941,
+          8.258
+        ],
+        [
+          41.68,
+          9.116
+        ]
+      ],
+      "fillets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "mask_color": "Red",
+    "rules": {
+      "clearance": 0.15,
+      "track": 0.2,
+      "via": [
+        0.6,
+        0.3
+      ],
+      "edge_clearance": 0.5,
+      "hole_to_hole": 0.5,
+      "min_through_hole": 0.3,
+      "min_track": 0.15,
+      "why_min_track": "Freerouting necks into 0.65 mm-pitch TSSOP pins; JLCPCB multilayer builds 0.09 mm"
+    },
+    "notes": "4 signal layers routed by Freerouting (a plane layer reaches the router as an empty power layer, so it neither connects nor routes: measured on art_red_star, 32 open with two planes), then poured after routing."
+  },
+  "placement": {
+    "usb:J?": {
+      "edge": "bottom",
+      "x": 0.0,
+      "overhang": 0.6,
+      "why": "USB-C on the tab at the bottom"
+    },
+    "core:U?": {
+      "at": [
+        55.12,
+        35.73
+      ],
+      "rot": 0,
+      "why": "controller at the deepest point inside the outline"
+    },
+    "px1:D?": {
+      "lock": [
+        43.214,
+        14.494
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 1 of 21 on the outline inset 4.0 mm"
+    },
+    "px1:C?": {
+      "lock": [
+        43.214,
+        17.494
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 1's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px2:D?": {
+      "lock": [
+        34.322,
+        14.057
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 2 of 21 on the outline inset 4.0 mm"
+    },
+    "px2:C?": {
+      "lock": [
+        34.322,
+        17.057
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 2's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px3:D?": {
+      "lock": [
+        24.997,
+        12.955
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 3 of 21 on the outline inset 4.0 mm"
+    },
+    "px3:C?": {
+      "lock": [
+        24.997,
+        15.955
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 3's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px4:D?": {
+      "lock": [
+        16.005,
+        15.659
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 4 of 21 on the outline inset 4.0 mm"
+    },
+    "px4:C?": {
+      "lock": [
+        16.005,
+        18.659
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 4's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px5:D?": {
+      "lock": [
+        8.873,
+        21.761
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 5 of 21 on the outline inset 4.0 mm"
+    },
+    "px5:C?": {
+      "lock": [
+        11.873,
+        21.761
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 5's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px6:D?": {
+      "lock": [
+        4.715,
+        30.175
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6 of 21 on the outline inset 4.0 mm"
+    },
+    "px6:C?": {
+      "lock": [
+        7.715,
+        30.175
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 6's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px7:D?": {
+      "lock": [
+        4.308,
+        39.557
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7 of 21 on the outline inset 4.0 mm"
+    },
+    "px7:C?": {
+      "lock": [
+        7.308,
+        39.557
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 7's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px8:D?": {
+      "lock": [
+        7.697,
+        48.311
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 8 of 21 on the outline inset 4.0 mm"
+    },
+    "px8:C?": {
+      "lock": [
+        10.697,
+        48.311
+      ],
+      "from_center": false,
+      "rot": 270,
+      "why": "LED 8's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px9:D?": {
+      "lock": [
+        14.275,
+        55.009
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 9 of 21 on the outline inset 4.0 mm"
+    },
+    "px9:C?": {
+      "lock": [
+        14.275,
+        52.009
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 9's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px10:D?": {
+      "lock": [
+        22.997,
+        58.495
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 10 of 21 on the outline inset 4.0 mm"
+    },
+    "px10:C?": {
+      "lock": [
+        22.997,
+        55.495
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 10's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px11:D?": {
+      "lock": [
+        32.385,
+        58.203
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 11 of 21 on the outline inset 4.0 mm"
+    },
+    "px11:C?": {
+      "lock": [
+        32.385,
+        55.203
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 11's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px12:D?": {
+      "lock": [
+        48.645,
+        58.151
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 12 of 21 on the outline inset 4.0 mm"
+    },
+    "px12:C?": {
+      "lock": [
+        48.645,
+        55.151
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 12's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px13:D?": {
+      "lock": [
+        58.033,
+        58.708
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 13 of 21 on the outline inset 4.0 mm"
+    },
+    "px13:C?": {
+      "lock": [
+        58.033,
+        55.708
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 13's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px14:D?": {
+      "lock": [
+        66.988,
+        55.907
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 14 of 21 on the outline inset 4.0 mm"
+    },
+    "px14:C?": {
+      "lock": [
+        66.988,
+        52.907
+      ],
+      "from_center": false,
+      "rot": 0,
+      "why": "LED 14's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px15:D?": {
+      "lock": [
+        74.073,
+        49.754
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 15 of 21 on the outline inset 4.0 mm"
+    },
+    "px15:C?": {
+      "lock": [
+        71.073,
+        49.754
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 15's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px16:D?": {
+      "lock": [
+        78.127,
+        41.286
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 16 of 21 on the outline inset 4.0 mm"
+    },
+    "px16:C?": {
+      "lock": [
+        75.127,
+        41.286
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 16's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px17:D?": {
+      "lock": [
+        78.432,
+        31.902
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 17 of 21 on the outline inset 4.0 mm"
+    },
+    "px17:C?": {
+      "lock": [
+        75.432,
+        31.902
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 17's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px18:D?": {
+      "lock": [
+        74.97,
+        23.174
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 18 of 21 on the outline inset 4.0 mm"
+    },
+    "px18:C?": {
+      "lock": [
+        71.97,
+        23.174
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 18's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px19:D?": {
+      "lock": [
+        68.278,
+        16.594
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 19 of 21 on the outline inset 4.0 mm"
+    },
+    "px19:C?": {
+      "lock": [
+        68.278,
+        19.594
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 19's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px20:D?": {
+      "lock": [
+        59.541,
+        13.17
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 20 of 21 on the outline inset 4.0 mm"
+    },
+    "px20:C?": {
+      "lock": [
+        59.541,
+        16.17
+      ],
+      "from_center": false,
+      "rot": 180,
+      "why": "LED 20's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "px21:D?": {
+      "lock": [
+        52.042,
+        8.624
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 21 of 21 on the outline inset 4.0 mm"
+    },
+    "px21:C?": {
+      "lock": [
+        49.042,
+        8.624
+      ],
+      "from_center": false,
+      "rot": 90,
+      "why": "LED 21's 100 nF 3 mm inside it, leaving room for the vias down to the planes"
+    },
+    "out:J?": {
+      "at": [
+        55.12,
+        31.23
+      ],
+      "rot": 90,
+      "why": "chain-out header above the controller"
+    }
+  },
+  "route": {
+    "passes": 30,
+    "fanout": true,
+    "solve_s": 300,
+    "why": "default ladder"
+  },
+  "stitch_pitch": 6.0,
+  "silk": {
+    "words": {
+      "core:SW?": "MODE",
+      "core:J?": "SWIO"
+    },
+    "title": [
+      {
+        "text": "GRAVITY",
+        "y": 23.7,
+        "size": 1.6,
+        "bold": true
+      },
+      {
+        "text": "fell on the right head",
+        "y": 26.2,
+        "size": 0.8
+      }
+    ]
+  },
+  "captions": {
+    "place_3d": "GRAVITY: LEDs around the outline, the controller above the USB-C tab.",
+    "done_3d": "Apple LED art board"
+  }
+}

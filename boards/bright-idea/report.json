@@ -1,0 +1,1275 @@
+{
+  "parts": {
+    "bound": 56,
+    "unsourced": 0,
+    "conflicts": 0,
+    "refs_by_status": {
+      "bound": [
+        "J1",
+        "R1",
+        "R2",
+        "C1",
+        "U1",
+        "C2",
+        "C3",
+        "R3",
+        "R4",
+        "J2",
+        "SW1",
+        "D1",
+        "C4",
+        "D2",
+        "C5",
+        "D3",
+        "C6",
+        "D4",
+        "C7",
+        "D5",
+        "C8",
+        "D6",
+        "C9",
+        "D7",
+        "C10",
+        "D8",
+        "C11",
+        "D9",
+        "C12",
+        "D10",
+        "C13",
+        "D11",
+        "C14",
+        "D12",
+        "C15",
+        "D13",
+        "C16",
+        "D14",
+        "C17",
+        "D15",
+        "C18",
+        "D16",
+        "C19",
+        "D17",
+        "C20",
+        "D18",
+        "C21",
+        "D19",
+        "C22",
+        "D20",
+        "C23",
+        "D21",
+        "C24",
+        "D22",
+        "C25",
+        "J3"
+      ],
+      "unsourced": [],
+      "conflict": []
+    },
+    "not_in_bom": [],
+    "extended_distinct": [
+      "C165948",
+      "C2937625",
+      "C5187096",
+      "C5349955"
+    ],
+    "extended_fee_usd": 12.0,
+    "findings": [
+      {
+        "code": "part_out_of_stock",
+        "severity": "warning",
+        "ref": "R4",
+        "detail": "C25804 0603WAF1002T5E had 0 stock at the 2026-06-23 snapshot",
+        "fix": "pick an in-stock equivalent for R4, or accept a pre-order"
+      },
+      {
+        "code": "jlcpcb_extended_parts",
+        "severity": "info",
+        "detail": "4 distinct Extended parts, about $12 in JLC loading fees",
+        "fix": "swap an Extended part for a Basic one where the table lists one"
+      }
+    ],
+    "table": "lcsc_pinned.json",
+    "table_source": "HeyPCB runner/cache/jlcparts/cache.sqlite3, table jlc_components, queried 2026-09-26. Each row's `snapshot` is that row's fetched_at."
+  },
+  "compose": {
+    "components": 56,
+    "nets": 33,
+    "noConnects": [
+      "J1.A8",
+      "J1.B8"
+    ],
+    "ran": true,
+    "seconds": 6.6
+  },
+  "schematic": {
+    "paper": "A2",
+    "file": "art_bright_idea.kicad_sch",
+    "ran": true,
+    "seconds": 22.3
+  },
+  "erc": {
+    "ran": true,
+    "errors": 0,
+    "warnings": 0,
+    "types": [],
+    "seconds": 1.4
+  },
+  "netlist": {
+    "ok": true,
+    "missing": [],
+    "extra": [],
+    "differ": [],
+    "nets": 33,
+    "ran": true,
+    "seconds": 3.8
+  },
+  "colors": {
+    "mask": "Yellow",
+    "silk": "Black"
+  },
+  "board": {
+    "footprints": 56,
+    "outline_mm": [
+      59.97,
+      88.98
+    ],
+    "stackup": {
+      "copper": 4,
+      "layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "planes": {},
+      "plane_layers": [],
+      "signal_layers": [
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu",
+        "B.Cu"
+      ],
+      "dfm_profile": "jlcpcb_4layer"
+    },
+    "ran": true,
+    "seconds": 4.3
+  },
+  "place": {
+    "parts": 56,
+    "log": [
+      "D1 -> (14.38, 53.19) rot 270 : rung 0 lock: LED 1 of 22 on the outline inset 4.0 mm",
+      "C4 -> (17.38, 53.19) rot 270 : rung 0 lock: LED 1's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D2 -> (16.52, 61.87) rot 270 : rung 0 lock: LED 2 of 22 on the outline inset 4.0 mm",
+      "C5 -> (19.52, 61.87) rot 270 : rung 0 lock: LED 2's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D3 -> (18.66, 70.54) rot 270 : rung 0 lock: LED 3 of 22 on the outline inset 4.0 mm",
+      "C6 -> (21.66, 70.54) rot 270 : rung 0 lock: LED 3's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D4 -> (21.78, 77.96) rot 0 : rung 0 lock: LED 4 of 22 on the outline inset 4.0 mm",
+      "C7 -> (21.78, 74.96) rot 0 : rung 0 lock: LED 4's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D5 -> (38.02, 77.96) rot 0 : rung 0 lock: LED 5 of 22 on the outline inset 4.0 mm",
+      "C8 -> (38.02, 74.96) rot 0 : rung 0 lock: LED 5's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D6 -> (41.24, 70.66) rot 90 : rung 0 lock: LED 6 of 22 on the outline inset 4.0 mm",
+      "C9 -> (38.24, 70.66) rot 90 : rung 0 lock: LED 6's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D7 -> (43.39, 61.99) rot 90 : rung 0 lock: LED 7 of 22 on the outline inset 4.0 mm",
+      "C10 -> (40.39, 61.99) rot 90 : rung 0 lock: LED 7's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D8 -> (45.54, 53.31) rot 90 : rung 0 lock: LED 8 of 22 on the outline inset 4.0 mm",
+      "C11 -> (42.54, 53.31) rot 90 : rung 0 lock: LED 8's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D9 -> (50.38, 46.01) rot 90 : rung 0 lock: LED 9 of 22 on the outline inset 4.0 mm",
+      "C12 -> (47.38, 46.01) rot 90 : rung 0 lock: LED 9's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D10 -> (54.62, 38.20) rot 90 : rung 0 lock: LED 10 of 22 on the outline inset 4.0 mm",
+      "C13 -> (51.62, 38.20) rot 90 : rung 0 lock: LED 10's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D11 -> (55.96, 29.41) rot 90 : rung 0 lock: LED 11 of 22 on the outline inset 4.0 mm",
+      "C14 -> (52.96, 29.41) rot 90 : rung 0 lock: LED 11's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D12 -> (54.24, 20.69) rot 90 : rung 0 lock: LED 12 of 22 on the outline inset 4.0 mm",
+      "C15 -> (51.24, 20.69) rot 90 : rung 0 lock: LED 12's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D13 -> (49.70, 13.05) rot 90 : rung 0 lock: LED 13 of 22 on the outline inset 4.0 mm",
+      "C16 -> (46.70, 13.05) rot 90 : rung 0 lock: LED 13's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D14 -> (42.83, 7.40) rot 180 : rung 0 lock: LED 14 of 22 on the outline inset 4.0 mm",
+      "C17 -> (42.83, 10.40) rot 180 : rung 0 lock: LED 14's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D15 -> (34.47, 4.39) rot 180 : rung 0 lock: LED 15 of 22 on the outline inset 4.0 mm",
+      "C18 -> (34.47, 7.39) rot 180 : rung 0 lock: LED 15's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D16 -> (25.59, 4.36) rot 180 : rung 0 lock: LED 16 of 22 on the outline inset 4.0 mm",
+      "C19 -> (25.59, 7.36) rot 180 : rung 0 lock: LED 16's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D17 -> (17.22, 7.34) rot 180 : rung 0 lock: LED 17 of 22 on the outline inset 4.0 mm",
+      "C20 -> (17.22, 10.34) rot 180 : rung 0 lock: LED 17's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D18 -> (10.33, 12.96) rot 270 : rung 0 lock: LED 18 of 22 on the outline inset 4.0 mm",
+      "C21 -> (13.33, 12.96) rot 270 : rung 0 lock: LED 18's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D19 -> (5.75, 20.57) rot 270 : rung 0 lock: LED 19 of 22 on the outline inset 4.0 mm",
+      "C22 -> (8.75, 20.57) rot 270 : rung 0 lock: LED 19's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D20 -> (4.00, 29.28) rot 270 : rung 0 lock: LED 20 of 22 on the outline inset 4.0 mm",
+      "C23 -> (7.00, 29.28) rot 270 : rung 0 lock: LED 20's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D21 -> (5.29, 38.07) rot 270 : rung 0 lock: LED 21 of 22 on the outline inset 4.0 mm",
+      "C24 -> (8.29, 38.07) rot 270 : rung 0 lock: LED 21's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "D22 -> (9.47, 45.92) rot 270 : rung 0 lock: LED 22 of 22 on the outline inset 4.0 mm",
+      "C25 -> (12.47, 45.92) rot 270 : rung 0 lock: LED 22's 100 nF 3 mm inside it, leaving room for the vias down to the planes",
+      "J1 -> (29.99, 85.88) rot 0 : rung 2 edge connector on the bottom edge, mouth outward",
+      "C1 -> (27.53, 78.47) rot 90 : rung 7 satellite of J1.A4 (5V) (shelf T of J1)",
+      "R1 -> (29.49, 79.24) rot 90 : rung 7 satellite of J1.A5 (J1_CC1) (shelf T of J1)",
+      "R2 -> (31.74, 79.24) rot 90 : rung 7 satellite of J1.B5 (J1_CC2) (shelf T of J1)",
+      "J3 -> (29.89, 25.47) rot 90 : rung 3 block anchor at the brief's target (out): chain-out header above the controller",
+      "U1 -> (29.89, 32.22) rot 0 : rung 3 block anchor at the brief's target (core): controller at the deepest point inside the outline",
+      "R4 -> (24.12, 34.50) rot 180 : rung 7 satellite of U1.9 (5V) (shelf L of U1)",
+      "J2 -> (23.83, 37.50) rot 270 : rung 7 satellite of U1.9 (5V) (shelf L of U1)",
+      "C3 -> (24.69, 32.75) rot 180 : rung 7 satellite of U1.9 (5V) (shelf L of U1)",
+      "C2 -> (21.40, 32.25) rot 180 : rung 7 satellite of U1.9 (5V) (shelf L of U1)",
+      "R3 -> (35.66, 31.90) rot 0 : rung 7 satellite of U1.16 (U1_MCU_DATA) (shelf R of U1)",
+      "SW1 -> (29.03, 39.91) rot 90 : rung 7 satellite of U1.10 (U1_BTN) (shelf B of U1)"
+    ],
+    "ran": true,
+    "seconds": 8.0
+  },
+  "route": {
+    "before": 143,
+    "after": 0,
+    "open_by_net": {},
+    "fixes": [],
+    "passes": [
+      [
+        1,
+        9
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        8
+      ],
+      [
+        11,
+        8
+      ],
+      [
+        12,
+        8
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        15,
+        8
+      ],
+      [
+        16,
+        8
+      ],
+      [
+        17,
+        8
+      ],
+      [
+        18,
+        8
+      ]
+    ],
+    "stats": {
+      "tracks": 554,
+      "vias": 72,
+      "length_mm": 1171.5,
+      "length_by_layer_mm": {
+        "F.Cu": 553.5,
+        "In1.Cu": 327.2,
+        "In2.Cu": 290.8
+      }
+    },
+    "layers": [
+      [
+        "F.Cu",
+        "signal"
+      ],
+      [
+        "In1.Cu",
+        "signal"
+      ],
+      [
+        "In2.Cu",
+        "signal"
+      ],
+      [
+        "B.Cu",
+        "signal"
+      ]
+    ],
+    "ladder": [
+      {
+        "rung": 1,
+        "tag": "1_fanout",
+        "classes": {},
+        "fanout": true,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 18,
+            "renamed": 12,
+            "nets": 49
+          },
+          "viaViaClearance_mm": 0.2
+        },
+        "seconds": 188.5,
+        "ok": true,
+        "log": {
+          "nets": {
+            "5V": 2,
+            "D2": 1,
+            "D3": 1,
+            "D7": 1,
+            "D8": 1,
+            "GND": 2
+          },
+          "timedOut": false,
+          "noProgress": true,
+          "last_unrouted": 8,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 7,
+          "kept_narrow": 26,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "last_mile": {
+          "ok": true,
+          "openBefore": 8,
+          "openAfterModel": 0,
+          "closed": 8,
+          "tracks": 24,
+          "vias": 8,
+          "deadlineHit": false,
+          "limitations": [],
+          "seconds": 1.6,
+          "connections": [
+            {
+              "net": "GND",
+              "from": "D2.2",
+              "to": "C1.2",
+              "outcome": "closed",
+              "vias": 1,
+              "lengthMm": 1.79
+            },
+            {
+              "net": "5V",
+              "from": "D2.4",
+              "to": "C1.1",
+              "outcome": "closed",
+              "vias": 0,
+              "lengthMm": 2.35
+            },
+            {
+              "net": "5V",
+              "from": "D7.4",
+              "to": "C1.1",
+              "outcome": "closed",
+              "vias": 1,
+              "lengthMm": 0.45
+            },
+            {
+              "net": "GND",
+              "from": "D7.2",
+              "to": "C1.2",
+              "outcome": "closed",
+              "vias": 0,
+              "lengthMm": 3.37
+            },
+            {
+              "net": "D2",
+              "from": "D1.1",
+              "to": "D2.3",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 11.23
+            },
+            {
+              "net": "D3",
+              "from": "D2.1",
+              "to": "D3.3",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 10.16
+            },
+            {
+              "net": "D8",
+              "from": "D7.1",
+              "to": "D8.3",
+              "outcome": "closed",
+              "vias": 0,
+              "lengthMm": 13.38
+            },
+            {
+              "net": "D7",
+              "from": "D6.1",
+              "to": "D7.3",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 11.07
+            }
+          ],
+          "accepted": true,
+          "verdict": {
+            "beforeU": 8,
+            "afterU": 0,
+            "beforeE": 0,
+            "afterE": 0,
+            "introduced": 0,
+            "rekeyed": 0,
+            "introducedTypes": [],
+            "kind": "ok",
+            "accept": true
+          },
+          "kept_tracks": 24,
+          "kept_vias": 8
+        },
+        "open_by_net": {},
+        "stats": {
+          "tracks": 554,
+          "vias": 72,
+          "length_mm": 1171.5,
+          "length_by_layer_mm": {
+            "F.Cu": 553.5,
+            "In1.Cu": 327.2,
+            "In2.Cu": 290.8
+          }
+        }
+      },
+      {
+        "rung": 1,
+        "tag": "1_nofanout",
+        "classes": {},
+        "fanout": false,
+        "export": {
+          "poursWithheld": 0,
+          "keepoutsMirrored": 0,
+          "clearanceBumpedTo_mm": null,
+          "powerLayers": [],
+          "rewritten": [],
+          "pinShapesOnPlanesDropped": 0,
+          "planes": 0,
+          "canonical": {
+            "images": 18,
+            "renamed": 12,
+            "nets": 49
+          },
+          "viaViaClearance_mm": 0.2
+        },
+        "seconds": 114.2,
+        "ok": true,
+        "log": {
+          "nets": {
+            "5V": 2,
+            "D2": 1,
+            "D3": 1,
+            "D7": 1,
+            "D8": 1,
+            "GND": 2
+          },
+          "timedOut": false,
+          "noProgress": true,
+          "last_unrouted": 8,
+          "read": true
+        },
+        "widths": {
+          "snapped": 0,
+          "widened": 0,
+          "kept_narrow": 0,
+          "raised_to_min": 0,
+          "below_min_deleted": 0
+        },
+        "shorts_deleted": 0,
+        "keepout_deleted": 0,
+        "drc": {
+          "ran": true,
+          "electrical": 0,
+          "unconnected": 0,
+          "score": 0,
+          "types": {},
+          "shorts": 0,
+          "keepout": 0
+        },
+        "open": 0,
+        "last_mile": {
+          "ok": true,
+          "openBefore": 8,
+          "openAfterModel": 0,
+          "closed": 8,
+          "tracks": 27,
+          "vias": 12,
+          "deadlineHit": false,
+          "limitations": [],
+          "seconds": 1.71,
+          "connections": [
+            {
+              "net": "GND",
+              "from": "D2.2",
+              "to": "C1.2",
+              "outcome": "closed",
+              "vias": 0,
+              "lengthMm": 2.54
+            },
+            {
+              "net": "5V",
+              "from": "D2.4",
+              "to": "C1.1",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 2.67
+            },
+            {
+              "net": "5V",
+              "from": "D7.4",
+              "to": "C1.1",
+              "outcome": "closed",
+              "vias": 0,
+              "lengthMm": 0.65
+            },
+            {
+              "net": "GND",
+              "from": "D7.2",
+              "to": "C1.2",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 3.89
+            },
+            {
+              "net": "D2",
+              "from": "D1.1",
+              "to": "D2.3",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 10.53
+            },
+            {
+              "net": "D3",
+              "from": "D2.1",
+              "to": "D3.3",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 10.16
+            },
+            {
+              "net": "D8",
+              "from": "D7.1",
+              "to": "D8.3",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 11.6
+            },
+            {
+              "net": "D7",
+              "from": "D6.1",
+              "to": "D7.3",
+              "outcome": "closed",
+              "vias": 2,
+              "lengthMm": 11.07
+            }
+          ],
+          "accepted": true,
+          "verdict": {
+            "beforeU": 8,
+            "afterU": 0,
+            "beforeE": 0,
+            "afterE": 0,
+            "introduced": 0,
+            "rekeyed": 0,
+            "introducedTypes": [],
+            "kind": "ok",
+            "accept": true
+          },
+          "kept_tracks": 27,
+          "kept_vias": 12
+        },
+        "open_by_net": {},
+        "stats": {
+          "tracks": 523,
+          "vias": 63,
+          "length_mm": 1179.6,
+          "length_by_layer_mm": {
+            "B.Cu": 10.7,
+            "F.Cu": 737.5,
+            "In1.Cu": 260.9,
+            "In2.Cu": 170.5
+          }
+        }
+      }
+    ],
+    "kept_rung": "1_fanout",
+    "classes_routed": {},
+    "fanout_kept": true,
+    "fanout_compare": {
+      "1_fanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 72,
+        "seconds": 188.5
+      },
+      "1_nofanout": {
+        "open": 0,
+        "score": 0,
+        "vias": 63,
+        "seconds": 114.2
+      }
+    },
+    "pad_vias": [],
+    "timedOut": false,
+    "noProgress": true,
+    "ran": true,
+    "seconds": 313.5
+  },
+  "pour": {
+    "plan": [
+      {
+        "layer": "F.Cu",
+        "net": "GND",
+        "priority": 0
+      },
+      {
+        "layer": "B.Cu",
+        "net": "GND",
+        "priority": 0
+      },
+      {
+        "layer": "In1.Cu",
+        "net": "5V",
+        "priority": 1
+      },
+      {
+        "layer": "In2.Cu",
+        "net": "GND",
+        "priority": 0
+      }
+    ],
+    "open_before": 0,
+    "open_after_pour": 0,
+    "stitch_vias": 59,
+    "open_after_stitch": 0,
+    "island_repair_vias": 0,
+    "open_final": 0,
+    "zones": [],
+    "stats": {
+      "tracks": 554,
+      "vias": 131,
+      "length_mm": 1171.5,
+      "length_by_layer_mm": {
+        "F.Cu": 553.5,
+        "In1.Cu": 327.2,
+        "In2.Cu": 290.8
+      }
+    },
+    "ran": true,
+    "seconds": 0.9
+  },
+  "silk": {
+    "silk_clipped": 3,
+    "footprint_strokes_widened": 193,
+    "pin_labels": 0,
+    "silk_refused": [],
+    "words": 2,
+    "refs_seated": 53,
+    "refs_hidden": 1,
+    "title_offset_mm": [
+      0.0,
+      0.0
+    ],
+    "title_lines": 2,
+    "stitch_vias_displaced": 4,
+    "ran": true,
+    "seconds": 0.3
+  },
+  "drc": {
+    "ran": true,
+    "state": "fresh",
+    "board_sha": "fe6bd828dd085b0a91ed32629347ee98ea01211f6b70afe310483e4192e5565d",
+    "errors": 0,
+    "warnings": 1,
+    "unconnected": 0,
+    "parity": 0,
+    "error_types": {},
+    "warning_types": {
+      "lib_footprint_mismatch": 1
+    },
+    "repairs": [],
+    "seconds": 1.4
+  },
+  "dfm": {
+    "ran": true,
+    "profile": "jlcpcb_4layer",
+    "copper_layers": 4,
+    "errors": 0,
+    "warnings": 0,
+    "rows": []
+  },
+  "fab": {
+    "gerbers": [
+      "art_bright_idea-B_Cu.gbl",
+      "art_bright_idea-B_Mask.gbs",
+      "art_bright_idea-B_Paste.gbp",
+      "art_bright_idea-B_Silkscreen.gbo",
+      "art_bright_idea-Edge_Cuts.gm1",
+      "art_bright_idea-F_Cu.gtl",
+      "art_bright_idea-F_Mask.gts",
+      "art_bright_idea-F_Paste.gtp",
+      "art_bright_idea-F_Silkscreen.gto",
+      "art_bright_idea-In1_Cu.g1",
+      "art_bright_idea-In2_Cu.g2",
+      "art_bright_idea-job.gbrjob"
+    ],
+    "copper_layers": 4,
+    "copper_gerbers": [
+      "art_bright_idea-F_Cu.gtl",
+      "art_bright_idea-In1_Cu.g1",
+      "art_bright_idea-In2_Cu.g2",
+      "art_bright_idea-B_Cu.gbl"
+    ],
+    "gerber_job": {
+      "file": "art_bright_idea-job.gbrjob",
+      "layer_number": 4,
+      "board_thickness_mm": 1.6,
+      "copper_files": [
+        "art_bright_idea-F_Cu.gtl",
+        "art_bright_idea-In1_Cu.g1",
+        "art_bright_idea-In2_Cu.g2",
+        "art_bright_idea-B_Cu.gbl"
+      ],
+      "copper_mm": [
+        0.035,
+        0.035,
+        0.035,
+        0.035
+      ],
+      "dielectric_mm": [
+        0.48,
+        0.48,
+        0.48
+      ],
+      "dielectric": [
+        "FR4",
+        "FR4",
+        "FR4"
+      ]
+    },
+    "drill": [
+      "art_bright_idea.drl",
+      "art_bright_idea-drl_map.gbr"
+    ],
+    "zip": "art_bright_idea_gerbers.zip",
+    "pos": "art_bright_idea_pos.csv",
+    "cpl": "art_bright_idea_cpl_jlc.csv",
+    "cpl_fit": {
+      "rows": 56,
+      "fitted": 55,
+      "table": [
+        "SW1"
+      ],
+      "pin_to_pad_max_mm": 0.26,
+      "lands": {
+        "fetched": 0
+      },
+      "parts": {
+        "C1": {
+          "source": "fitted",
+          "lcsc": "C15850",
+          "turn": 0,
+          "rms_mm": 0.05,
+          "next_mm": 1.3793,
+          "pin_to_pad_max_mm": 0.05
+        },
+        "C2": {
+          "source": "fitted",
+          "lcsc": "C15850",
+          "turn": 0,
+          "rms_mm": 0.05,
+          "next_mm": 1.3793,
+          "pin_to_pad_max_mm": 0.05
+        },
+        "C3": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C4": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C5": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C6": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C7": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C8": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C9": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C10": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C11": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C12": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C13": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C14": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C15": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C16": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C17": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C18": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C19": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C20": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C21": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C22": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C23": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C24": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "C25": {
+          "source": "fitted",
+          "lcsc": "C1525",
+          "turn": 0,
+          "rms_mm": 0.0599,
+          "next_mm": 0.6379,
+          "pin_to_pad_max_mm": 0.06
+        },
+        "D1": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D2": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D3": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D4": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D5": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D6": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D7": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D8": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D9": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D10": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D11": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D12": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D13": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D14": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D15": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D16": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D17": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D18": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D19": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D20": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D21": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "D22": {
+          "source": "fitted",
+          "lcsc": "C5349955",
+          "turn": 180,
+          "rms_mm": 0.26,
+          "next_mm": 1.4205,
+          "pin_to_pad_max_mm": 0.26
+        },
+        "J1": {
+          "source": "fitted",
+          "lcsc": "C165948",
+          "turn": 0,
+          "rms_mm": 0.0001,
+          "next_mm": 1.6202,
+          "pin_to_pad_max_mm": 0.0
+        },
+        "J2": {
+          "source": "fitted",
+          "lcsc": "C2937625",
+          "turn": 270,
+          "rms_mm": 0.0,
+          "next_mm": 2.9329,
+          "pin_to_pad_max_mm": 0.0
+        },
+        "J3": {
+          "source": "fitted",
+          "lcsc": "C2937625",
+          "turn": 270,
+          "rms_mm": 0.0,
+          "next_mm": 2.9329,
+          "pin_to_pad_max_mm": 0.0
+        },
+        "R1": {
+          "source": "fitted",
+          "lcsc": "C25905",
+          "turn": 0,
+          "rms_mm": 0.0772,
+          "next_mm": 0.6689,
+          "pin_to_pad_max_mm": 0.077
+        },
+        "R2": {
+          "source": "fitted",
+          "lcsc": "C25905",
+          "turn": 0,
+          "rms_mm": 0.0772,
+          "next_mm": 0.6689,
+          "pin_to_pad_max_mm": 0.077
+        },
+        "R3": {
+          "source": "fitted",
+          "lcsc": "C23140",
+          "turn": 0,
+          "rms_mm": 0.0716,
+          "next_mm": 1.1172,
+          "pin_to_pad_max_mm": 0.072
+        },
+        "R4": {
+          "source": "fitted",
+          "lcsc": "C25804",
+          "turn": 0,
+          "rms_mm": 0.0716,
+          "next_mm": 1.1172,
+          "pin_to_pad_max_mm": 0.072
+        },
+        "SW1": {
+          "source": "table",
+          "lcsc": "C318884",
+          "why": "few_pads"
+        },
+        "U1": {
+          "source": "fitted",
+          "lcsc": "C5187096",
+          "turn": 270,
+          "rms_mm": 0.0085,
+          "next_mm": 4.8382,
+          "pin_to_pad_max_mm": 0.009
+        }
+      }
+    },
+    "bom": "art_bright_idea_bom.csv",
+    "schematic_pdf": "art_bright_idea_schematic.pdf",
+    "step": "art_bright_idea.step",
+    "ready": true,
+    "blockers": [],
+    "drc_state": "fresh",
+    "ran": true,
+    "seconds": 2.1
+  }
+}

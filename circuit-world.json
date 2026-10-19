@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "project": {
+    "title": "HeyPCB LED Art 2",
+    "summary": "More shaped LED boards inspired by films: a light bulb for Edison's thousand failures, a starfighter, a submarine, a snowman, an atom, a trophy for the underdog, each in its own colour. KiCad 10, JLCPCB-ready, CERN-OHL-S-2.0."
+  },
+  "boards": [
+    {
+      "slug": "atom-age",
+      "path": "boards/atom-age",
+      "title": "HeyPCB Atomic",
+      "role": "Atomic LED art, blue mask",
+      "summary": "Three electron orbits from a 1950s science-fiction title card, lit in a blue mask."
+    },
+    {
+      "slug": "big-apple",
+      "path": "boards/big-apple",
+      "title": "HeyPCB Gravity",
+      "role": "Gravity LED art, red mask",
+      "summary": "An apple, for the one that fell on the right head and turned into a theory of gravity."
+    },
+    {
+      "slug": "bright-idea",
+      "path": "boards/bright-idea",
+      "title": "HeyPCB Eureka",
+      "role": "Eureka LED art, yellow mask",
+      "summary": "A light bulb, for the inventor who said he hadn't failed, he'd found a thousand ways that didn't work. The LEDs run round the glass."
+    },
+    {
+      "slug": "champion",
+      "path": "boards/champion",
+      "title": "HeyPCB Champion",
+      "role": "Champion LED art, yellow mask",
+      "summary": "A trophy cup from the sports film where the underdog loses every game in the first act."
+    },
+    {
+      "slug": "desert-cactus",
+      "path": "boards/desert-cactus",
+      "title": "HeyPCB High Noon",
+      "role": "High Noon LED art, green mask",
+      "summary": "A saguaro cactus that stands in every spaghetti-western standoff, waiting for high noon."
+    },
+    {
+      "slug": "frosty",
+      "path": "boards/frosty",
+      "title": "HeyPCB Frosty",
+      "role": "Frosty LED art, white mask",
+      "summary": "A snowman from every winter holiday film: two snowballs and a lot of rebuilding after the first one fell over."
+    },
+    {
+      "slug": "jack-lantern",
+      "path": "boards/jack-lantern",
+      "title": "HeyPCB Jack",
+      "role": "Jack LED art, yellow mask",
+      "summary": "A three-lobed pumpkin for a Halloween horror double bill. The first carving always goes wrong."
+    },
+    {
+      "slug": "night-owl",
+      "path": "boards/night-owl",
+      "title": "HeyPCB Night Owl",
+      "role": "Night Owl LED art, purple mask",
+      "summary": "An owl with tufted ears, the kind that delivers letters in a wizarding film."
+    },
+    {
+      "slug": "pixel-raider",
+      "path": "boards/pixel-raider",
+      "title": "HeyPCB Raider",
+      "role": "Raider LED art, purple mask",
+      "summary": "A bigger, purple pixel alien. Game over is just the screen that asks whether you want to try again."
+    },
+    {
+      "slug": "sea-turtle",
+      "path": "boards/sea-turtle",
+      "title": "HeyPCB Turtle",
+      "role": "Turtle LED art, green mask",
+      "summary": "A sea turtle riding the ocean current in an underwater animated film."
+    },
+    {
+      "slug": "space-helmet",
+      "path": "boards/space-helmet",
+      "title": "HeyPCB Astronaut",
+      "role": "Astronaut LED art, white mask",
+      "summary": "An astronaut's helmet, for the mission that went wrong and still brought the crew home."
+    },
+    {
+      "slug": "starfighter",
+      "path": "boards/starfighter",
+      "title": "HeyPCB Starfighter",
+      "role": "Starfighter LED art, white mask",
+      "summary": "A delta-wing starfighter from a space-opera hangar. Test pilots crash the prototypes so the final ship flies."
+    },
+    {
+      "slug": "yellow-sub",
+      "path": "boards/yellow-sub",
+      "title": "HeyPCB Submarine",
+      "role": "Submarine LED art, yellow mask",
+      "summary": "A little yellow submarine from an animated music film, with a conning tower and a propeller."
+    }
+  ]
+}
